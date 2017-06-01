@@ -9,6 +9,7 @@ var nav = [
             { link: '/authors', text: 'Authors' }
         ];
 var bookRouter = require('./src/routes/bookRoute')(nav);
+var adminRouter = require('./src/routes/adminRoute')();
 
 app.use(express.static('public'));
 app.set('views', './src/views');
@@ -17,6 +18,7 @@ app.set('view engine', 'ejs');
 
 
 app.use("/books", bookRouter);
+app.use("/admin", adminRouter);
 
 app.get("/", function (req, res) {
     res.render('index', {
