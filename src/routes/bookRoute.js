@@ -31,7 +31,7 @@ var router = function (nav) {
 
             mongodb.connect(url, function (err, db) {
                 var collection = db.collection('books');
-                collection.find({}).toArray(
+                collection.findOne({}).toArray(
                     function (err, results) {
                         res.render("bookView", {
                             title: 'Hello from Render',
