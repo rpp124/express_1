@@ -5,23 +5,23 @@ var adminRouter = express.Router();
 
     var books = [
         {
-            title: "Booke One",
+            title: "The Way Of Kings",
             genre: "Fiction",
-            author: "Good Author",
+            author: "Brandon Sanderson",
             read: false
         },
 
         {
-            title: "Booke Two",
+            title: "Words of Radiance",
             genre: "Fiction",
-            author: "Good Author",
+            author: "Brandon Sanderson",
             read: false
         },
 
         {
-            title: "Booke Three",
+            title: "Warbreaker",
             genre: "Fiction",
-            author: "Good Author",
+            author: "Brandon Sanderson",
             read: false
         }
     ];
